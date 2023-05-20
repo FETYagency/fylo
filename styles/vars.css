@@ -1,0 +1,20 @@
+:root{
+    --Dark_Blue_intro_and_email_sign_up_background: hsl(217, 28%, 15%);
+    --Dark_Blue_main_background: hsl(218, 28%, 13%);
+    --Dark_Blue_footer_background: hsl(216, 53%, 9%);
+    --Dark_Blue_testimonials_background: hsl(219, 30%, 18%);
+
+
+    --Cyan_inside_call_to_action_gradient: #65e2d9;
+    --Blue_inside_call_to_action_gradient: #339ecc;
+    --Light_Red_error: hsl(0, 100%, 63%);
+
+    --White: hsl(0, 0%, 100%);
+
+    --FS_OPS_BOLD: "open_sans_condensedbold";
+    --FS_OPS_REGULAR: "open_sans_condensedregular";
+    --FS_raleway_BOLD: "ralewaybold";
+    --FS_raleway_REGULAR: "ralewayregular";
+
+    font-size: 15px;
+    }

@@ -1,0 +1,433 @@
+@import url(reset.css);
+@import url(vars.css);
+
+
+body{
+    background-color: var(--Dark_Blue_intro_and_email_sign_up_background);
+    font-family: var(--FS_OPS_REGULAR);
+}
+main{
+    margin-inline: auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 99;
+    padding-block: 4.86rem 0;
+}
+header>nav{
+    display: flex;
+    gap: 3.8rem;
+}
+
+
+/* gnerales *//* gnerales *//* gnerales *//* gnerales */
+img{
+    max-width: 100%;
+}
+h1,h2,h3,h4{
+    font-family: var(FS_raleway_BOLD);
+}
+a{
+    color: var(--White);
+    text-decoration: none;
+    font-family: var(--FS_raleway_BOLD);
+    font-size: 1.04rem;
+
+    display: inline-block;
+}
+.links:hover{
+    text-decoration: underline;
+}
+.HF_Isize{
+    max-width: 1600px;
+    width: 90vw;
+    margin-inline: auto
+}
+p{
+    font-size: .92rem;
+    line-height: 1.53rem;
+}
+/* end of generales */
+
+
+.intro_section{
+    display:grid;
+    grid-template-columns:auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+    place-items: center;
+
+    gap: 2.2rem;
+}
+.intro_article{
+    inline-size: min(589px,100%);
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.12rem;
+    container-type:inline-size;
+    container-name:intro_article;
+}
+.intro_header{
+    font-size: clamp(.4rem, 7cqi, 2.66rem);
+    line-height: clamp(.5rem, 10.5cqi, 4rem);
+}
+.intro_body{
+    font-size: clamp(.4rem, 4cqi, 1.33rem);
+    line-height: clamp(.5rem, 6cqi, 2.12rem);
+    color: var();
+}
+.intro_btn{
+    inline-size: clamp(30px, 100cqi, 280px) ;
+    block-size: clamp(10px, 100cqi, 56px);
+    font-size: 90%;
+    background: linear-gradient(164deg, rgba(101,226,217,1) 18%,rgba(51,158,204,1) 56%) rgba(101,226,217,.3);
+    display: grid;
+    place-items: center;
+    border-radius: 1.86rem;
+
+    transition: background-color .2s ease;
+}
+
+.intro_btn:hover{
+    background: linear-gradient(164deg, rgba(101,226,217,0) 18%,rgba(51,158,204,0) 56%) rgba(101,226,217,1);
+}
+/* the end of the intro section */
+
+/* features section *//* features section *//* features section *//* features section */
+.features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 9.8rem;
+    text-align: center;
+
+    inline-size: min(880px,100%);
+    margin-inline: auto;
+    padding-block: 10.533rem;
+
+    color: var(--White);
+}
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.12rem;
+
+    inline-size: min(350px,100%);
+    margin-inline: auto;
+}
+.feature_article>h3{
+    font-size: 1.33rem;
+    line-height: 1.53rem;
+}
+
+/* the end of the features section */
+
+/* the model section *//* the model section *//* the model section *//* the model section */
+.model{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 3.8rem;
+
+    max-inline-size: 1235px;
+    margin-inline: auto;
+
+    color: var(--White);  
+}
+.article_model{
+    inline-size: min(563px, 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.2rem;
+}
+.model_header{
+    font-size: 2.66rem;
+    line-height: 3.2rem;
+    max-width: 300px;
+}
+.btn_conntainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-block-end:  solid 1px white;
+    padding-block-end: 1rem;
+}
+.model_btn,svg{
+    color: var(--Cyan_inside_call_to_action_gradient);
+    transition: all .3s ease;
+}
+.model_btn:hover,.model_btn:hover+svg{
+    color: var(--White);
+}
+.model_btn:hover+svg{
+    transform: translateX(5px);
+}
+/* the end of the model section */
+
+/* testomonial section *//* testomonial section *//* testomonial section *//* testomonial section */
+
+.testomonials{
+    display: flex;
+    gap: 2.66rem;
+    color: var(--White);
+    position:relative;
+    max-inline-size: 1180px;
+    margin-inline: auto;
+    margin-block: 11.93rem 23.33rem;
+}
+.testomonials>img{
+    position: absolute;
+    inset: auto auto 95% -1%;
+    z-index: -1;
+}
+.card{
+    background-color: var(--Dark_Blue_testimonials_background);
+    border-radius: 4px;
+    padding-inline: 1.73rem;
+    padding-block: 2.66rem;
+}
+.card>div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-block-start: 1.8rem;
+}
+.card>div>img{
+    border-radius: 50%;
+    inline-size: 24px;
+}
+.card>div>address>p{
+    font-size: 8px;
+    Line-height:10px;
+    letter-spacing: .5px;
+    margin-block-start: 4px;
+}
+/* end of testomonial section */
+
+/* footer section *//* footer section *//* footer section *//* footer section */
+
+footer.HF_Isize{
+    inline-size: 100vw;
+    padding-inline: 8rem;
+    padding-block: 11.26rem 6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.46rem;
+    align-items: flex-start;
+    color: var(--White);
+    background-color: var(--Dark_Blue_footer_background);
+    position: relative;
+}
+.contact_container{
+    display: flex;
+    justify-content: space-between;
+    inline-size: 100%;
+}
+
+.social_container{
+    display: flex;
+    gap: 5.33rem;
+}
+
+.infos{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    gap: 0 5.33rem;
+}
+footer.HF_Isize address{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.66rem;
+}
+footer.HF_Isize address:nth-child(1){
+    grid-area: 1/1/3/2;
+    max-inline-size: 339px;
+}
+
+.links_list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+
+.social_links{
+    display: flex;
+    gap: 3rem;
+    align-items: flex-start;
+}
+.social_links>li{
+    position: relative;
+    z-index: 2;
+}
+.social_links>li::after{
+    position: absolute;
+    content: "";
+    width: 43px;
+    height: 43px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px var(--Cyan_inside_call_to_action_gradient) solid;
+    z-index: -1;
+}
+li>a{
+    color: var(--Cyan_inside_call_to_action_gradient);
+    font-size: 1.2rem;
+}
+li:hover>a{
+    color: white;
+}
+li:hover::after{
+    border: 1px white solid;
+}
+
+
+/* end of the footer */
+
+/* email section *//* email section *//* email section *//* email section */
+.email_section{
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: -25%;
+    transform: translate(-50%,0);
+
+    inline-size: min(863px,80%);
+    min-inline-size: 350px;
+
+    background-color: var(--Dark_Blue_intro_and_email_sign_up_background);
+    box-shadow: 2px 0 10px var( --Dark_Blue_footer_background);
+
+    padding-inline: 5.13rem;
+    padding-block: 2.3rem;
+
+    text-align: center;
+}
+.email_section>h2{
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+}
+.email_section>p{
+    font-size: .9rem;
+    line-height: 1.4rem;
+    margin-block: 1rem 0;
+    max-inline-size: 600px;
+    margin-inline: auto;
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    margin-block-start: 1.5rem;
+}
+form>input[type="email"]{
+    flex:4 1 auto;
+    inline-size: min(200px,100%);
+
+    border: solid 2px transparent;
+    padding-block: 1rem;
+    padding-inline: 2.6rem 0;
+    border-radius: 1.6rem;
+    font-size: var(--FS_OPS_REGULAR);
+    color: var( --Dark_Blue_footer_background);
+    outline: none;
+    transition: all .3s ease;
+}
+form>button[type="submit"]{
+    flex: 1 1 auto;
+    border-radius: 1.6rem;
+    border: none;
+    padding-block: 1rem;
+    border-radius: 1.6rem;
+    font-size: var(--FS_OPS_REGULAR);
+    color: var( --White);
+    background: linear-gradient(164deg, rgba(101,226,217,1) 18%,rgba(51,158,204,1) 56%) rgba(101,226,217,.3);
+    outline: none;
+
+    transition: all .1s ease;
+}
+form>button[type="submit"]:hover{
+    background: linear-gradient(164deg, rgba(101,226,217,0) 18%,rgba(51,158,204,0) 56%) rgba(101,226,217,1);
+}
+/* media queries */
+@media(width<1250px){
+    footer.HF_Isize{
+        padding-inline: 3rem;
+        padding-block: 11.26rem 6rem;
+    }
+    .contact_container,.social_container{
+        flex-direction: column;
+    }
+    .infos{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 2rem;
+        padding-block-end: 3.73rem;
+    }
+    .social_container{
+        gap: 3.73rem;
+    }
+    .social_links{
+        align-self: center;
+    }
+    .email_section{
+        inset-block-start: -15%;
+    }
+}
+
+@media (width<=750px) {
+    main{
+        max-width: 400px;
+        margin-inline: auto;
+    }
+    .logo{
+        max-inline-size: 80px;
+    }
+    header nav{
+        gap: 2.4rem;
+    }
+    header a{
+        font-size: .8rem;
+    }
+    .features{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .intro_btn{
+        inline-size: clamp(30px, 50cqi, 280px) ;
+        block-size: 48px;
+        font-size: 90%;
+        background: linear-gradient(164deg, rgba(101,226,217,1) 18%,rgba(51,158,204,1) 56%) rgba(101,226,217,.3);
+        display: grid;
+        place-items: center;
+        border-radius: 1.86rem;
+    
+        transition: background-color .2s ease;
+    }
+    .model{
+        grid-template-columns: 1fr;
+    }
+    .model_header{
+        font-size: 1.66rem;
+        line-height: 1.8rem;
+        max-width: 300px;
+    }
+    .testomonials{
+        flex-direction: column;
+    }
+    .testomonials>img{
+        inset: auto auto 99% 1%;
+    }
+    footer.HF_Isize{
+        padding-inline: 3rem;
+        padding-block: 25.26rem 6rem;
+    }
+}
